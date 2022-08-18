@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-08-18T20:29:22.008Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="i2jFbQjzRZn_TphsuF78" version="20.2.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-18T23:23:52.196Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="hpyJKv_Qt54CMjCMNr6X" version="20.2.5" type="github">
   <diagram id="6a731a19-8d31-9384-78a2-239565b7b9f0" name="Page-1">
-    <mxGraphModel dx="2498" dy="1422" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
+    <mxGraphModel dx="3926" dy="2234" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -25,7 +25,7 @@
         <mxCell id="1760" value="Spaces" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=none;strokeWidth=3;fillColor=#1699d3;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;align=center;spacing=5;fontStyle=1;arcSize=7;perimeterSpacing=2;" parent="1" vertex="1">
           <mxGeometry x="3205.1634615384614" y="630.5" width="150" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="mTL4OzwZciO8kVLIhES3-1783" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;dashed=1;" edge="1" parent="1" source="1761" target="1771">
+        <mxCell id="mTL4OzwZciO8kVLIhES3-1783" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;dashed=1;" parent="1" source="1761" target="1771" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="1761" value="Each space can exist only inside a workspace" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=none;strokeWidth=3;fillColor=#64bbe2;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;align=center;spacing=5;arcSize=7;perimeterSpacing=2;" parent="1" vertex="1">
@@ -52,125 +52,119 @@
         <mxCell id="1779" value="" style="edgeStyle=none;rounded=1;jumpStyle=none;html=1;shadow=0;labelBackgroundColor=none;startArrow=none;startFill=0;jettySize=auto;orthogonalLoop=1;strokeColor=#12AAB5;strokeWidth=3;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;spacing=5;fontStyle=1;fillColor=#b0e3e6;" parent="1" source="1771" target="1778" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mTL4OzwZciO8kVLIhES3-1779" value="Uses markdown (.md) language&amp;nbsp; by default" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=none;strokeWidth=3;fillColor=#f5af58;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;align=center;spacing=5;arcSize=7;perimeterSpacing=2;" vertex="1" parent="1">
+        <mxCell id="mTL4OzwZciO8kVLIhES3-1779" value="Uses markdown (.md) language&amp;nbsp; by default" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=none;strokeWidth=3;fillColor=#f5af58;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;align=center;spacing=5;arcSize=7;perimeterSpacing=2;" parent="1" vertex="1">
           <mxGeometry x="845.1634615384614" y="870.5" width="230" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="mTL4OzwZciO8kVLIhES3-1780" value="" style="edgeStyle=none;rounded=0;jumpStyle=none;html=1;shadow=0;labelBackgroundColor=none;startArrow=none;startFill=0;endArrow=classic;endFill=1;jettySize=auto;orthogonalLoop=1;strokeColor=#F08705;strokeWidth=3;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;spacing=5;" edge="1" parent="1" target="mTL4OzwZciO8kVLIhES3-1779" source="1764">
+        <mxCell id="mTL4OzwZciO8kVLIhES3-1780" value="" style="edgeStyle=none;rounded=0;jumpStyle=none;html=1;shadow=0;labelBackgroundColor=none;startArrow=none;startFill=0;endArrow=classic;endFill=1;jettySize=auto;orthogonalLoop=1;strokeColor=#F08705;strokeWidth=3;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;spacing=5;" parent="1" source="1764" target="mTL4OzwZciO8kVLIhES3-1779" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="668.6616758241757" y="852.5" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="mTL4OzwZciO8kVLIhES3-1785" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;dashed=1;" edge="1" parent="1" source="1762" target="1771">
+        <mxCell id="mTL4OzwZciO8kVLIhES3-1785" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;dashed=1;" parent="1" source="1762" target="1771" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1052.9133545310015" y="708" as="sourcePoint" />
             <mxPoint x="899.5866454689985" y="457.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="mTL4OzwZciO8kVLIhES3-1786" value="" style="edgeStyle=none;rounded=0;jumpStyle=none;html=1;shadow=0;labelBackgroundColor=none;startArrow=none;startFill=0;endArrow=classic;endFill=1;jettySize=auto;orthogonalLoop=1;strokeColor=#1699D3;strokeWidth=3;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;spacing=5;exitX=0.326;exitY=0.039;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" target="1762" source="mTL4OzwZciO8kVLIhES3-1787">
+        <mxCell id="mTL4OzwZciO8kVLIhES3-1786" value="" style="edgeStyle=none;rounded=0;jumpStyle=none;html=1;shadow=0;labelBackgroundColor=none;startArrow=none;startFill=0;endArrow=classic;endFill=1;jettySize=auto;orthogonalLoop=1;strokeColor=#1699D3;strokeWidth=3;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;spacing=5;exitX=0.326;exitY=0.039;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="mTL4OzwZciO8kVLIhES3-1787" target="1762" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1780" y="1010" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="mTL4OzwZciO8kVLIhES3-1787" value="For example, owner of the workspace can create personal space that will be visible only to owner or only to allowed people&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=3;fontFamily=Helvetica;fontSize=14;align=center;spacing=5;arcSize=7;perimeterSpacing=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="mTL4OzwZciO8kVLIhES3-1787" value="For example, owner of the workspace can create personal space that will be visible only to owner or only to allowed people&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=3;fontFamily=Helvetica;fontSize=14;align=center;spacing=5;arcSize=7;perimeterSpacing=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="2809.9961085972845" y="1080" width="440" height="83.5" as="geometry" />
         </mxCell>
-        <mxCell id="mTL4OzwZciO8kVLIhES3-1788" value="Markdown guarantees us that we will have great compatability with github, github-wiki or any other platform that supports markdown language" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=#d6b656;strokeWidth=3;fillColor=#fff2cc;fontFamily=Helvetica;fontSize=14;align=center;spacing=5;arcSize=7;perimeterSpacing=2;" vertex="1" parent="1">
+        <mxCell id="mTL4OzwZciO8kVLIhES3-1788" value="Markdown guarantees us that we will have great compatability with github, github-wiki or any other platform that supports markdown language" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=#d6b656;strokeWidth=3;fillColor=#fff2cc;fontFamily=Helvetica;fontSize=14;align=center;spacing=5;arcSize=7;perimeterSpacing=2;" parent="1" vertex="1">
           <mxGeometry x="750.0008144796379" y="1020" width="380" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="mTL4OzwZciO8kVLIhES3-1789" value="" style="edgeStyle=none;rounded=0;jumpStyle=none;html=1;shadow=0;labelBackgroundColor=none;startArrow=none;startFill=0;endArrow=classic;endFill=1;jettySize=auto;orthogonalLoop=1;strokeColor=#F08705;strokeWidth=3;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;spacing=5;" edge="1" parent="1" target="mTL4OzwZciO8kVLIhES3-1779" source="mTL4OzwZciO8kVLIhES3-1788">
+        <mxCell id="mTL4OzwZciO8kVLIhES3-1789" value="" style="edgeStyle=none;rounded=0;jumpStyle=none;html=1;shadow=0;labelBackgroundColor=none;startArrow=none;startFill=0;endArrow=classic;endFill=1;jettySize=auto;orthogonalLoop=1;strokeColor=#F08705;strokeWidth=3;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;spacing=5;" parent="1" source="mTL4OzwZciO8kVLIhES3-1788" target="mTL4OzwZciO8kVLIhES3-1779" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="690" y="1020" as="sourcePoint" />
             <mxPoint x="830" y="1020" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="mTL4OzwZciO8kVLIhES3-1796" value="Each note has its own comments section where people can discuss note" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=none;strokeWidth=3;fillColor=#f5af58;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;align=center;spacing=5;arcSize=7;perimeterSpacing=2;" vertex="1" parent="1">
+        <mxCell id="mTL4OzwZciO8kVLIhES3-1796" value="Each note has its own comments section where people can discuss note" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=none;strokeWidth=3;fillColor=#f5af58;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;align=center;spacing=5;arcSize=7;perimeterSpacing=2;" parent="1" vertex="1">
           <mxGeometry x="1115.1634615384614" y="870.5" width="230" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="mTL4OzwZciO8kVLIhES3-1797" value="" style="edgeStyle=none;rounded=0;jumpStyle=none;html=1;shadow=0;labelBackgroundColor=none;startArrow=none;startFill=0;endArrow=classic;endFill=1;jettySize=auto;orthogonalLoop=1;strokeColor=#F08705;strokeWidth=3;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;spacing=5;" edge="1" parent="1" target="mTL4OzwZciO8kVLIhES3-1796" source="1764">
+        <mxCell id="mTL4OzwZciO8kVLIhES3-1797" value="" style="edgeStyle=none;rounded=0;jumpStyle=none;html=1;shadow=0;labelBackgroundColor=none;startArrow=none;startFill=0;endArrow=classic;endFill=1;jettySize=auto;orthogonalLoop=1;strokeColor=#F08705;strokeWidth=3;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;spacing=5;" parent="1" source="1764" target="mTL4OzwZciO8kVLIhES3-1796" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="955.5140144796378" y="690" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="mTL4OzwZciO8kVLIhES3-1806" value="" style="rounded=0;jumpStyle=none;html=1;shadow=0;labelBackgroundColor=none;startArrow=none;startFill=0;endArrow=classic;endFill=1;jettySize=auto;orthogonalLoop=1;strokeColor=#F08705;strokeWidth=3;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;spacing=5;" edge="1" parent="1" target="mTL4OzwZciO8kVLIhES3-1803">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1964.0562500566743" y="1408" as="sourcePoint" />
-            <mxPoint x="240.00081447963794" y="746.4999999999998" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="mTL4OzwZciO8kVLIhES3-1811" value="Workspace only provides access to workspace. To make some restrictions for notes users should use spaces and folders" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=#82b366;strokeWidth=3;fillColor=#d5e8d4;fontFamily=Helvetica;fontSize=14;align=center;spacing=5;fontStyle=0;arcSize=7;perimeterSpacing=2;" vertex="1" parent="1">
+        <mxCell id="mTL4OzwZciO8kVLIhES3-1811" value="Workspace only provides access to workspace. To make some restrictions for notes users should use spaces and folders" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=#82b366;strokeWidth=3;fillColor=#d5e8d4;fontFamily=Helvetica;fontSize=14;align=center;spacing=5;fontStyle=0;arcSize=7;perimeterSpacing=2;" parent="1" vertex="1">
           <mxGeometry x="2025.163461538461" y="1070" width="320" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="mTL4OzwZciO8kVLIhES3-1812" value="" style="edgeStyle=none;rounded=1;jumpStyle=none;html=1;shadow=0;labelBackgroundColor=none;startArrow=none;startFill=0;jettySize=auto;orthogonalLoop=1;strokeColor=#82b366;strokeWidth=3;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;spacing=5;fontStyle=1;fillColor=#d5e8d4;" edge="1" parent="1" target="1778" source="mTL4OzwZciO8kVLIhES3-1811">
+        <mxCell id="mTL4OzwZciO8kVLIhES3-1812" value="" style="edgeStyle=none;rounded=1;jumpStyle=none;html=1;shadow=0;labelBackgroundColor=none;startArrow=none;startFill=0;jettySize=auto;orthogonalLoop=1;strokeColor=#82b366;strokeWidth=3;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;spacing=5;fontStyle=1;fillColor=#d5e8d4;" parent="1" source="mTL4OzwZciO8kVLIhES3-1811" target="1778" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1370.002116083916" y="1010.5" as="sourcePoint" />
             <mxPoint x="1400" y="1090" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="mTL4OzwZciO8kVLIhES3-1813" value="Folders" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=none;strokeWidth=3;fillColor=#e51400;fontFamily=Helvetica;fontSize=14;align=center;spacing=5;fontStyle=1;arcSize=7;perimeterSpacing=2;fontColor=#ffffff;" vertex="1" parent="1">
+        <mxCell id="mTL4OzwZciO8kVLIhES3-1813" value="Folders" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=none;strokeWidth=3;fillColor=#e51400;fontFamily=Helvetica;fontSize=14;align=center;spacing=5;fontStyle=1;arcSize=7;perimeterSpacing=2;fontColor=#ffffff;" parent="1" vertex="1">
           <mxGeometry x="4325.163461538461" y="630.5" width="150" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="mTL4OzwZciO8kVLIhES3-1814" value="" style="edgeStyle=none;rounded=0;jumpStyle=none;html=1;shadow=0;labelBackgroundColor=none;startArrow=none;startFill=0;endArrow=classic;endFill=1;jettySize=auto;orthogonalLoop=1;strokeColor=#B20000;strokeWidth=3;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;spacing=5;fillColor=#e51400;" edge="1" parent="1" source="mTL4OzwZciO8kVLIhES3-1813" target="mTL4OzwZciO8kVLIhES3-1815">
+        <mxCell id="mTL4OzwZciO8kVLIhES3-1814" value="" style="edgeStyle=none;rounded=0;jumpStyle=none;html=1;shadow=0;labelBackgroundColor=none;startArrow=none;startFill=0;endArrow=classic;endFill=1;jettySize=auto;orthogonalLoop=1;strokeColor=#B20000;strokeWidth=3;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;spacing=5;fillColor=#e51400;" parent="1" source="mTL4OzwZciO8kVLIhES3-1813" target="mTL4OzwZciO8kVLIhES3-1815" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="320" y="550" as="sourcePoint" />
             <mxPoint x="250" y="720" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="mTL4OzwZciO8kVLIhES3-1815" value="Folders cannot be nestend inside each other. They exists on the same level inside space" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=none;strokeWidth=3;fillColor=#e51400;fontFamily=Helvetica;fontSize=14;align=center;spacing=5;fontStyle=1;arcSize=7;perimeterSpacing=2;fontColor=#ffffff;" vertex="1" parent="1">
+        <mxCell id="mTL4OzwZciO8kVLIhES3-1815" value="Folders cannot be nestend inside each other. They exists on the same level inside space" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=none;strokeWidth=3;fillColor=#e51400;fontFamily=Helvetica;fontSize=14;align=center;spacing=5;fontStyle=1;arcSize=7;perimeterSpacing=2;fontColor=#ffffff;" parent="1" vertex="1">
           <mxGeometry x="3845.163461538461" y="870.5" width="350" height="97.75" as="geometry" />
         </mxCell>
-        <mxCell id="mTL4OzwZciO8kVLIhES3-1816" value="" style="edgeStyle=none;rounded=0;jumpStyle=none;html=1;shadow=0;labelBackgroundColor=none;startArrow=none;startFill=0;endArrow=classic;endFill=1;jettySize=auto;orthogonalLoop=1;strokeColor=#B20000;strokeWidth=3;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;spacing=5;fillColor=#e51400;" edge="1" parent="1" target="mTL4OzwZciO8kVLIhES3-1817" source="mTL4OzwZciO8kVLIhES3-1813">
+        <mxCell id="mTL4OzwZciO8kVLIhES3-1816" value="" style="edgeStyle=none;rounded=0;jumpStyle=none;html=1;shadow=0;labelBackgroundColor=none;startArrow=none;startFill=0;endArrow=classic;endFill=1;jettySize=auto;orthogonalLoop=1;strokeColor=#B20000;strokeWidth=3;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;spacing=5;fillColor=#e51400;" parent="1" source="mTL4OzwZciO8kVLIhES3-1813" target="mTL4OzwZciO8kVLIhES3-1817" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="452.36922118806433" y="600" as="sourcePoint" />
             <mxPoint x="430" y="788" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="mTL4OzwZciO8kVLIhES3-1817" value="Primarly used to group notes and restrict access for them" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=none;strokeWidth=3;fillColor=#e51400;fontFamily=Helvetica;fontSize=14;align=center;spacing=5;fontStyle=1;arcSize=7;perimeterSpacing=2;fontColor=#ffffff;" vertex="1" parent="1">
+        <mxCell id="mTL4OzwZciO8kVLIhES3-1817" value="Primarly used to group notes and restrict access for them" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=none;strokeWidth=3;fillColor=#e51400;fontFamily=Helvetica;fontSize=14;align=center;spacing=5;fontStyle=1;arcSize=7;perimeterSpacing=2;fontColor=#ffffff;" parent="1" vertex="1">
           <mxGeometry x="4235.163461538461" y="870.5" width="340" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="mTL4OzwZciO8kVLIhES3-1818" value="" style="edgeStyle=none;rounded=0;jumpStyle=none;html=1;shadow=0;labelBackgroundColor=none;startArrow=none;startFill=0;endArrow=classic;endFill=1;jettySize=auto;orthogonalLoop=1;strokeColor=#2F5B7C;strokeWidth=3;fontFamily=Helvetica;fontSize=16;fontColor=#23445D;spacing=5;" edge="1" parent="1" source="1749" target="mTL4OzwZciO8kVLIhES3-1813">
+        <mxCell id="mTL4OzwZciO8kVLIhES3-1818" value="" style="edgeStyle=none;rounded=0;jumpStyle=none;html=1;shadow=0;labelBackgroundColor=none;startArrow=none;startFill=0;endArrow=classic;endFill=1;jettySize=auto;orthogonalLoop=1;strokeColor=#2F5B7C;strokeWidth=3;fontFamily=Helvetica;fontSize=16;fontColor=#23445D;spacing=5;" parent="1" source="1749" target="mTL4OzwZciO8kVLIhES3-1813" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1310.663461538461" y="454.32758620689674" as="sourcePoint" />
             <mxPoint x="703.4134615384614" y="681.6724137931035" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="mTL4OzwZciO8kVLIhES3-1819" value="Users that does not have access to space where folder is located are not assignable to this folder" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=#ae4132;strokeWidth=3;fillColor=#fad9d5;fontFamily=Helvetica;fontSize=14;align=center;spacing=5;fontStyle=1;arcSize=7;perimeterSpacing=2;" vertex="1" parent="1">
+        <mxCell id="mTL4OzwZciO8kVLIhES3-1819" value="Users that does not have access to space where folder is located are not assignable to this folder" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=#ae4132;strokeWidth=3;fillColor=#fad9d5;fontFamily=Helvetica;fontSize=14;align=center;spacing=5;fontStyle=1;arcSize=7;perimeterSpacing=2;" parent="1" vertex="1">
           <mxGeometry x="4170.003461538461" y="1110" width="340" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="mTL4OzwZciO8kVLIhES3-1820" value="" style="edgeStyle=none;rounded=0;jumpStyle=none;html=1;shadow=0;labelBackgroundColor=none;startArrow=none;startFill=0;endArrow=classic;endFill=1;jettySize=auto;orthogonalLoop=1;strokeColor=#ae4132;strokeWidth=3;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;spacing=5;fillColor=#fad9d5;" edge="1" parent="1" source="mTL4OzwZciO8kVLIhES3-1819" target="mTL4OzwZciO8kVLIhES3-1817">
+        <mxCell id="mTL4OzwZciO8kVLIhES3-1820" value="" style="edgeStyle=none;rounded=0;jumpStyle=none;html=1;shadow=0;labelBackgroundColor=none;startArrow=none;startFill=0;endArrow=classic;endFill=1;jettySize=auto;orthogonalLoop=1;strokeColor=#ae4132;strokeWidth=3;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;spacing=5;fillColor=#fad9d5;" parent="1" source="mTL4OzwZciO8kVLIhES3-1819" target="mTL4OzwZciO8kVLIhES3-1817" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="3975.9491758241757" y="742.5" as="sourcePoint" />
             <mxPoint x="4099.377747252746" y="958.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="mTL4OzwZciO8kVLIhES3-1825" value="" style="edgeStyle=none;rounded=0;jumpStyle=none;html=1;shadow=0;labelBackgroundColor=none;startArrow=none;startFill=0;endArrow=classic;endFill=1;jettySize=auto;orthogonalLoop=1;strokeColor=#1699D3;strokeWidth=3;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;spacing=5;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" target="mTL4OzwZciO8kVLIhES3-1826" source="1760">
+        <mxCell id="mTL4OzwZciO8kVLIhES3-1825" value="" style="edgeStyle=none;rounded=0;jumpStyle=none;html=1;shadow=0;labelBackgroundColor=none;startArrow=none;startFill=0;endArrow=classic;endFill=1;jettySize=auto;orthogonalLoop=1;strokeColor=#1699D3;strokeWidth=3;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;spacing=5;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="1760" target="mTL4OzwZciO8kVLIhES3-1826" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="3300.00134032634" y="610" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="mTL4OzwZciO8kVLIhES3-1826" value="Spaces cannot be nested inside each other. They are exist on same level inside workspace" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=none;strokeWidth=3;fillColor=#64bbe2;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;align=center;spacing=5;arcSize=7;perimeterSpacing=2;" vertex="1" parent="1">
+        <mxCell id="mTL4OzwZciO8kVLIhES3-1826" value="Spaces cannot be nested inside each other. They are exist on same level inside workspace" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=none;strokeWidth=3;fillColor=#64bbe2;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;align=center;spacing=5;arcSize=7;perimeterSpacing=2;" parent="1" vertex="1">
           <mxGeometry x="3540.1634615384614" y="870.5" width="265" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="mTL4OzwZciO8kVLIhES3-1827" value="" style="edgeStyle=none;rounded=0;jumpStyle=none;html=1;shadow=0;labelBackgroundColor=none;startArrow=none;startFill=0;endArrow=classic;endFill=1;jettySize=auto;orthogonalLoop=1;strokeColor=#B20000;strokeWidth=3;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;spacing=5;fillColor=#e51400;" edge="1" parent="1" target="mTL4OzwZciO8kVLIhES3-1828" source="mTL4OzwZciO8kVLIhES3-1813">
+        <mxCell id="mTL4OzwZciO8kVLIhES3-1827" value="" style="edgeStyle=none;rounded=0;jumpStyle=none;html=1;shadow=0;labelBackgroundColor=none;startArrow=none;startFill=0;endArrow=classic;endFill=1;jettySize=auto;orthogonalLoop=1;strokeColor=#B20000;strokeWidth=3;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;spacing=5;fillColor=#e51400;" parent="1" source="mTL4OzwZciO8kVLIhES3-1813" target="mTL4OzwZciO8kVLIhES3-1828" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="4064.200137222683" y="590" as="sourcePoint" />
             <mxPoint x="505.8" y="645.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="mTL4OzwZciO8kVLIhES3-1828" value="Can be placed only inside spaces" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=none;strokeWidth=3;fillColor=#e51400;fontFamily=Helvetica;fontSize=14;align=center;spacing=5;fontStyle=1;arcSize=7;perimeterSpacing=2;fontColor=#ffffff;" vertex="1" parent="1">
+        <mxCell id="mTL4OzwZciO8kVLIhES3-1828" value="Can be placed only inside spaces" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=none;strokeWidth=3;fillColor=#e51400;fontFamily=Helvetica;fontSize=14;align=center;spacing=5;fontStyle=1;arcSize=7;perimeterSpacing=2;fontColor=#ffffff;" parent="1" vertex="1">
           <mxGeometry x="4615.163461538461" y="870.5" width="340" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="mTL4OzwZciO8kVLIhES3-1830" value="Note can have attachments such as: image, document" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=none;strokeWidth=3;fillColor=#f5af58;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;align=center;spacing=5;arcSize=7;perimeterSpacing=2;" vertex="1" parent="1">
+        <mxCell id="mTL4OzwZciO8kVLIhES3-1830" value="Note can have attachments such as: image, document" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=none;strokeWidth=3;fillColor=#f5af58;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;align=center;spacing=5;arcSize=7;perimeterSpacing=2;" parent="1" vertex="1">
           <mxGeometry x="1385.1634615384614" y="870.5" width="230" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="mTL4OzwZciO8kVLIhES3-1831" value="" style="edgeStyle=none;rounded=0;jumpStyle=none;html=1;shadow=0;labelBackgroundColor=none;startArrow=none;startFill=0;endArrow=classic;endFill=1;jettySize=auto;orthogonalLoop=1;strokeColor=#F08705;strokeWidth=3;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;spacing=5;" edge="1" parent="1" target="mTL4OzwZciO8kVLIhES3-1830" source="1764">
+        <mxCell id="mTL4OzwZciO8kVLIhES3-1831" value="" style="edgeStyle=none;rounded=0;jumpStyle=none;html=1;shadow=0;labelBackgroundColor=none;startArrow=none;startFill=0;endArrow=classic;endFill=1;jettySize=auto;orthogonalLoop=1;strokeColor=#F08705;strokeWidth=3;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;spacing=5;" parent="1" source="1764" target="mTL4OzwZciO8kVLIhES3-1830" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1670.618846153846" y="823.2500000000002" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="mTL4OzwZciO8kVLIhES3-1832" value="Workspaces cannot be nested inside each other" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=none;strokeWidth=3;fillColor=#61c6ce;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;align=left;spacing=5;fontStyle=0;arcSize=7;perimeterSpacing=2;" vertex="1" parent="1">
+        <mxCell id="mTL4OzwZciO8kVLIhES3-1832" value="Workspaces cannot be nested inside each other" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeColor=none;strokeWidth=3;fillColor=#61c6ce;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;align=left;spacing=5;fontStyle=0;arcSize=7;perimeterSpacing=2;" parent="1" vertex="1">
           <mxGeometry x="2385.1634615384614" y="870.5" width="330" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="mTL4OzwZciO8kVLIhES3-1833" value="" style="edgeStyle=none;rounded=1;jumpStyle=none;html=1;shadow=0;labelBackgroundColor=none;startArrow=none;startFill=0;jettySize=auto;orthogonalLoop=1;strokeColor=#12AAB5;strokeWidth=3;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;spacing=5;fontStyle=1;fillColor=#b0e3e6;" edge="1" parent="1" target="mTL4OzwZciO8kVLIhES3-1832" source="1771">
+        <mxCell id="mTL4OzwZciO8kVLIhES3-1833" value="" style="edgeStyle=none;rounded=1;jumpStyle=none;html=1;shadow=0;labelBackgroundColor=none;startArrow=none;startFill=0;jettySize=auto;orthogonalLoop=1;strokeColor=#12AAB5;strokeWidth=3;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;spacing=5;fontStyle=1;fillColor=#b0e3e6;" parent="1" source="1771" target="mTL4OzwZciO8kVLIhES3-1832" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1911.4152262443438" y="760.25" as="sourcePoint" />
           </mxGeometry>
