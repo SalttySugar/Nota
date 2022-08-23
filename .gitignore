@@ -1,3 +1,8 @@
+
+/docs/diagrams/*
+!/docs/diagrams/*.vpp
+
+
 # Created by https://www.toptal.com/developers/gitignore/api/intellij+all,csharp,vs
 # Edit at https://www.toptal.com/developers/gitignore?templates=intellij+all,csharp,vs
 
