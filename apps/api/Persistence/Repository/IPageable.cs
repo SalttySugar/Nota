@@ -1,4 +1,4 @@
-namespace Application.Services;
+namespace Persistence.Repository;
 
 public interface IPageable
 {

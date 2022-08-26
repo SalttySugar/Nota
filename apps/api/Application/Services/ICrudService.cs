@@ -1,3 +1,5 @@
+using Persistence.Repository;
+
 namespace Application.Services;
 
 public interface ICrudService<TModel, TCreate, TUpdate>
