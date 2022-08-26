@@ -1,6 +1,11 @@
 namespace Application.DTO;
 
-class EditWorkspaceDTO
+public class EditWorkspaceDTO
 {
     public string Name { get; set; }
+
+    public EditWorkspaceDTO(string name)
+    {
+        Name = name;
+    }
 }

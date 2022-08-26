@@ -2,7 +2,7 @@ namespace Application.DTO;
 
 public class UpdateNoteDTO
 {
-    string? Title { get; set; }
-    string? Content { get; set; }
-    int? SpaceId { get; set; }
+    public string? Title { get; set; }
+    public string? Content { get; set; }
+    public int? SpaceId { get; set; }
 }
