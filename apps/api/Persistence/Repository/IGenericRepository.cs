@@ -4,11 +4,11 @@ namespace Persistence.Repository;
 
 public interface IGenericRepository<TEntity>
 {
-    TEntity Save(TEntity entity);
-    TEntity FindOne(int id);
-    TEntity FindMany(
+    Task<TEntity> Save(TEntity entity);
+    Task<TEntity> FindOne(int id);
+    Task<ICollection<TEntity>> FindMany(
         Expression<Func<TEntity, bool>> filter,
         Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy
     );
-    TEntity DeleteOne(int id);
+    Task DeleteOne(int id);
 }
