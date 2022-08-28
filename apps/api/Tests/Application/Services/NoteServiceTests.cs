@@ -1,11 +1,9 @@
 using Xunit;
 using Moq;
-
 using Application.Models;
 using Application.DTO;
 using Application.Services;
 using Persistence.Repository;
-using System;
 using LanguageExt;
 using System.Threading.Tasks;
 using Application.Errors;
@@ -17,8 +15,6 @@ public class NoteServiceTests
     private readonly Mock<IRepository<Note>> NoteRepositoryMock = new();
     private readonly Mock<ISpaceService> SpaceServiceMock = new();
     private readonly Mock<Space> SpaceMock = new();
-
-
 
     [Fact]
     public async Task FindOne()
@@ -49,19 +45,19 @@ public class NoteServiceTests
         NoteService noteService = new(NoteRepositoryMock.Object, SpaceServiceMock.Object);
 
         // test
-        CreateNoteDTO dto = new()
-        {
-            Title = NOTE_TITLE,
-            Content = NOTE_CONTENT,
-            SpaceId = NOTE_SPACE_ID
-        };
+        CreateNoteDTO dto =
+            new()
+            {
+                Title = NOTE_TITLE,
+                Content = NOTE_CONTENT,
+                SpaceId = NOTE_SPACE_ID
+            };
 
         Note result = await noteService.CreateOne(dto);
         Assert.True(result.Title == dto.Title);
         Assert.True(result.Content == dto.Content);
         Assert.True(result.Space.Id == NOTE_SPACE_ID);
     }
-
 
     [Fact]
     public async Task UpdateOne()
@@ -72,7 +68,9 @@ public class NoteServiceTests
         NoteService service = new(NoteRepositoryMock.Object, SpaceServiceMock.Object);
 
         await service.UpdateOne(1, new UpdateNoteDTO());
-        await Assert.ThrowsAsync<NoteNotFoundException>(() => service.UpdateOne(2, new UpdateNoteDTO()));
+        await Assert.ThrowsAsync<NoteNotFoundException>(
+            () => service.UpdateOne(2, new UpdateNoteDTO())
+        );
     }
 
     [Fact]
@@ -86,6 +84,4 @@ public class NoteServiceTests
         await service.DeleteOne(1);
         await Assert.ThrowsAsync<NoteNotFoundException>(() => service.DeleteOne(2));
     }
-
-
 }
