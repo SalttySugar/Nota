@@ -12,15 +12,27 @@ namespace Tests.Application.Services;
 
 public class NoteServiceTests
 {
+    // ------------------------------------------------------------ //
+    // PROPERTIES
+    // ------------------------------------------------------------ //
+
     private readonly Mock<IRepository<Note>> NoteRepositoryMock = new();
     private readonly Mock<ISpaceService> SpaceServiceMock = new();
     private readonly Mock<Space> SpaceMock = new();
     private readonly INoteService NoteService;
 
+    // ------------------------------------------------------------ //
+    // CONSTRUCTOR
+    // ------------------------------------------------------------ //
+
     public NoteServiceTests()
     {
         NoteService = new NoteService(NoteRepositoryMock.Object, SpaceServiceMock.Object);
     }
+
+    // ------------------------------------------------------------ //
+    // TESTS
+    // ------------------------------------------------------------ //
 
     [Fact]
     public async Task FindOne()
