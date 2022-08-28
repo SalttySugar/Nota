@@ -1,4 +1,5 @@
 using Application.DTO;
+using Application.Errors;
 using Application.Models;
 using Persistence.Repository;
 
@@ -6,53 +7,76 @@ namespace Application.Services;
 
 public class NoteService : INoteService
 {
-    protected IGenericRepository<Note> NoteRepository { get; private set; }
-    protected IGenericRepository<Space> SpaceRepository { get; private set; }
+    protected IRepository<Note> NoteRepository { get; private set; }
+    protected ISpaceService SpaceService { get; private set; }
 
-    public NoteService(
-        IGenericRepository<Note> noteRepository,
-        IGenericRepository<Space> spaceRepository
-    )
+    public NoteService(IRepository<Note> noteRepository, ISpaceService spaceService)
     {
         NoteRepository = noteRepository;
-        SpaceRepository = spaceRepository;
+        SpaceService = spaceService;
     }
 
-    public Task<int> Count()
+    public async Task<Note> FindOne(int id)
     {
-        throw new NotImplementedException();
-    }
-
-    public async Task<Note> CreateOne(CreateNoteDTO createPayload)
-    {
-        Space space = await SpaceRepository.FindOne(createPayload.SpaceId);
-        Note note = new(createPayload.Title, space, DateTime.Now);
-        return await NoteRepository.Save(note);
-    }
-
-    public Task DeleteOne(int id)
-    {
-        return NoteRepository.DeleteOne(id);
+        Note? note = await NoteRepository.FindOne(id) ?? throw new NoteNotFoundException(id);
+        return note;
     }
 
     public Task<ICollection<Note>> FindMany()
     {
-      //TODO: move this to interface 
-        return FindMany(new Pageable());
+        return NoteRepository.FindMany(null, null, new Pageable());
     }
 
     public Task<ICollection<Note>> FindMany(IPageable pageable)
     {
-        throw new NotImplementedException();
+        return NoteRepository.FindMany(null, null, pageable);
     }
 
-    public Task<Note> FindOne(int id)
+    public async Task<Note> CreateOne(CreateNoteDTO createPayload)
     {
-        throw new NotImplementedException();
+        Space space = await SpaceService.FindOne(createPayload.SpaceId);
+
+        Note note = new Note
+        {
+            Title = createPayload.Title,
+            Content = createPayload.Content,
+            Space = space,
+        };
+
+        return await NoteRepository.Save(note);
     }
 
-    public Task<Note> UpdateOne(int id, UpdateNoteDTO updatePayload)
+    public async Task<Note> UpdateOne(int id, UpdateNoteDTO updatePayload)
     {
-        throw new NotImplementedException();
+        Note note = await FindOne(id);
+
+        if (updatePayload.Title != null)
+        {
+            note.Title = updatePayload.Title;
+        }
+
+        if (updatePayload.Content != null)
+        {
+            note.Content = updatePayload.Content;
+        }
+
+        if (updatePayload.SpaceId != null)
+        {
+            Space space = await SpaceService.FindOne((int)updatePayload.SpaceId);
+            note.Space = space;
+        }
+
+        return await NoteRepository.Save(note);
+    }
+
+    public async Task DeleteOne(int id)
+    {
+        Note note = await FindOne(id);
+        await NoteRepository.DeleteOne(id);
+    }
+
+    public Task<int> Count()
+    {
+        return NoteRepository.Count();
     }
 }
