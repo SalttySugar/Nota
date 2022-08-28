@@ -2,7 +2,7 @@ namespace Application.DTO;
 
 public class BaseDTO
 {
-    public int Id { get; set; }
-    public DateTime CreatedAt { get; set; }
-    public DateTime? UpdatedAt { get; set; }
+    public virtual int Id { get; set; }
+    public virtual DateTime CreatedAt { get; set; }
+    public virtual DateTime? UpdatedAt { get; set; }
 }

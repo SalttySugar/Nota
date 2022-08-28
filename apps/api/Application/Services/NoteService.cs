@@ -7,14 +7,26 @@ namespace Application.Services;
 
 public class NoteService : INoteService
 {
+    // ------------------------------------------------------------ //
+    // PROPERTIES
+    // ------------------------------------------------------------ //
+
     protected IRepository<Note> NoteRepository { get; private set; }
     protected ISpaceService SpaceService { get; private set; }
+
+    // ------------------------------------------------------------ //
+    // CONSTRUCTORS
+    // ------------------------------------------------------------ //
 
     public NoteService(IRepository<Note> noteRepository, ISpaceService spaceService)
     {
         NoteRepository = noteRepository;
         SpaceService = spaceService;
     }
+
+    // ------------------------------------------------------------ //
+    // METHODS
+    // ------------------------------------------------------------ //
 
     public async Task<Note> FindOne(int id)
     {
@@ -36,12 +48,13 @@ public class NoteService : INoteService
     {
         Space space = await SpaceService.FindOne(createPayload.SpaceId);
 
-        Note note = new Note
-        {
-            Title = createPayload.Title,
-            Content = createPayload.Content,
-            Space = space,
-        };
+        Note note =
+            new()
+            {
+                Title = createPayload.Title,
+                Content = createPayload.Content,
+                Space = space,
+            };
 
         return await NoteRepository.Save(note);
     }
@@ -62,8 +75,7 @@ public class NoteService : INoteService
 
         if (updatePayload.SpaceId != null)
         {
-            Space space = await SpaceService.FindOne((int)updatePayload.SpaceId);
-            note.Space = space;
+            note.Space = await SpaceService.FindOne((int)updatePayload.SpaceId);
         }
 
         return await NoteRepository.Save(note);
@@ -71,7 +83,7 @@ public class NoteService : INoteService
 
     public async Task DeleteOne(int id)
     {
-        Note note = await FindOne(id);
+        _ = await FindOne(id);
         await NoteRepository.DeleteOne(id);
     }
 

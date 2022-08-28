@@ -2,6 +2,6 @@ namespace Application.DTO;
 
 public class UpdateSpaceDTO
 {
-    public string? Name { get; set; }
-    public int? WorkspaceId { get; set; }
+    public virtual string? Name { get; set; }
+    public virtual int? WorkspaceId { get; set; }
 }
