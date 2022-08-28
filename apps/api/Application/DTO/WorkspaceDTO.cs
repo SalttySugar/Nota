@@ -2,6 +2,6 @@ namespace Application.DTO;
 
 public class WorkspaceDTO : BaseDTO
 {
-    public string Name { get; set; } = null!;
-    public ICollection<int> SpacesIds { get; set; } = null!;
+    public virtual string Name { get; set; } = null!;
+    public virtual ICollection<int> SpacesIds { get; set; } = null!;
 }
