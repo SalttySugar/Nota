@@ -15,6 +15,12 @@ public class NoteServiceTests
     private readonly Mock<IRepository<Note>> NoteRepositoryMock = new();
     private readonly Mock<ISpaceService> SpaceServiceMock = new();
     private readonly Mock<Space> SpaceMock = new();
+    private readonly INoteService NoteService;
+
+    public NoteServiceTests()
+    {
+        NoteService = new NoteService(NoteRepositoryMock.Object, SpaceServiceMock.Object);
+    }
 
     [Fact]
     public async Task FindOne()
@@ -22,10 +28,8 @@ public class NoteServiceTests
         NoteRepositoryMock.Setup(m => m.FindOne(1)).ReturnsAsync(Mock.Of<Note?>());
         NoteRepositoryMock.Setup(m => m.FindOne(2)).ReturnsAsync((Note?)null);
 
-        NoteService service = new(NoteRepositoryMock.Object, SpaceServiceMock.Object);
-
-        await service.FindOne(1);
-        await Assert.ThrowsAsync<NoteNotFoundException>(() => service.FindOne(2));
+        await NoteService.FindOne(1);
+        await Assert.ThrowsAsync<NoteNotFoundException>(() => NoteService.FindOne(2));
     }
 
     [Fact]
@@ -41,9 +45,6 @@ public class NoteServiceTests
         SpaceServiceMock.Setup(m => m.FindOne(1)).Returns(SpaceMock.Object.AsTask());
         NoteRepositoryMock.Setup(m => m.Save(It.IsAny<Note>())).Returns<Note>(x => x.AsTask());
 
-        // instance
-        NoteService noteService = new(NoteRepositoryMock.Object, SpaceServiceMock.Object);
-
         // test
         CreateNoteDTO dto =
             new()
@@ -53,7 +54,7 @@ public class NoteServiceTests
                 SpaceId = NOTE_SPACE_ID
             };
 
-        Note result = await noteService.CreateOne(dto);
+        Note result = await NoteService.CreateOne(dto);
         Assert.True(result.Title == dto.Title);
         Assert.True(result.Content == dto.Content);
         Assert.True(result.Space.Id == NOTE_SPACE_ID);
@@ -65,11 +66,9 @@ public class NoteServiceTests
         NoteRepositoryMock.Setup(m => m.FindOne(1)).ReturnsAsync(Mock.Of<Note?>());
         NoteRepositoryMock.Setup(m => m.FindOne(2)).ReturnsAsync((Note?)null);
 
-        NoteService service = new(NoteRepositoryMock.Object, SpaceServiceMock.Object);
-
-        await service.UpdateOne(1, new UpdateNoteDTO());
+        await NoteService.UpdateOne(1, new UpdateNoteDTO());
         await Assert.ThrowsAsync<NoteNotFoundException>(
-            () => service.UpdateOne(2, new UpdateNoteDTO())
+            () => NoteService.UpdateOne(2, new UpdateNoteDTO())
         );
     }
 
@@ -78,10 +77,8 @@ public class NoteServiceTests
     {
         NoteRepositoryMock.Setup(m => m.FindOne(1)).ReturnsAsync(Mock.Of<Note?>());
         NoteRepositoryMock.Setup(m => m.FindOne(2)).ReturnsAsync((Note?)null);
-
-        NoteService service = new(NoteRepositoryMock.Object, SpaceServiceMock.Object);
-
-        await service.DeleteOne(1);
-        await Assert.ThrowsAsync<NoteNotFoundException>(() => service.DeleteOne(2));
+        
+        await NoteService.DeleteOne(1);
+        await Assert.ThrowsAsync<NoteNotFoundException>(() => NoteService.DeleteOne(2));
     }
 }
